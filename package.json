@@ -1,0 +1,30 @@
+{
+  "name": "rdeprera.github",
+  "version": "1.0.0",
+  "description": "Quase um blog pessoal, mais para um registro de idéias e opiniões que podem ser atualizadas ao longo do tempo dependendo do tipo de assunto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdeprera/rdeprera.github.git"
+  },
+  "keywords": [
+    "blog",
+    "javascript",
+    "markdown",
+    "ssg"
+  ],
+  "author": "Reinaldo Deprera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdeprera/rdeprera.github/issues"
+  },
+  "homepage": "https://github.com/rdeprera/rdeprera.github#readme",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
