@@ -1,6 +1,6 @@
 ### Download de Sites por Wget
 
-;;;shell
+~~~shell
 wget -E -H -k -p [URL]
 
 ## Parâmetros Wget para "ripar" uma página
