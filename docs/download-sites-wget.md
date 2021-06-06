@@ -2,6 +2,7 @@
 
 ~~~shell
 wget -E -H -k -p [URL]
+~~~
 
 ## Parâmetros Wget para "ripar" uma página
     -E: Adiciona .html no nome da extensão do arquivo se ele for do tipo html mas não terminalr com .html ou etensão similar
