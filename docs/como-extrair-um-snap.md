@@ -3,6 +3,7 @@
 Primeiro é necessário baixar o arquivo  com extensão .snap, ou seja, o pacote snap:
 ~~~shell
 sudo snap download <nomedopacote>
+~~~
 
 No caso de receber um erro como este:
 > error: cannot download snap "<nomedopacote>": no snap revision available as specified
@@ -14,5 +15,6 @@ O comando irá baixar dois arquivos. Um de extensão .snap e outro de extensão 
 mkdir ./<nomedopacote>/
 mount -t squashfs -o ro <nomedopacote>.snap ./<nomedopacote>/
 cd ./<nomedopacote>/ && ls -lna
+~~~
 
 Pronto!
