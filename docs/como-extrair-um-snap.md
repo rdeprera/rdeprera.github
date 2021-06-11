@@ -6,7 +6,7 @@ sudo snap download <nomedopacote>
 ~~~
 
 No caso de receber um erro como este:
-> error: cannot download snap "<nomedopacote>": no snap revision available as specified
+> error: cannot download snap \<nomedopacote\>: no snap revision available as specified
 
 É porque provavelmente é a primeira versão do software ou o pacote está mal formatado. Não sei ainda ao certo. Mas neste caso basta adicionar o parâmetro --release=<versão> para forçar o download e suprimir o erro. Na <versão> podemos usar *latest*, *master*, *stable* ou o número da versão.
 
