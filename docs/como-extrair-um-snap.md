@@ -1,4 +1,4 @@
-# Como Extrair um SNAP (Pacote de Software)
+# Como Extrair um (Arquivo/Pacote) SNAP
 
 Primeiro é necessário baixar o arquivo  com extensão .snap, ou seja, o pacote snap:
 ~~~shell
