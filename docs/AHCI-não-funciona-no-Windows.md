@@ -13,15 +13,33 @@ Portanto, para habilitar AHCI nesses sistemas da Microsoft é necessário:
 4. Reiniciar o SO
 5. Refazer as configurações de carregamento (boot)
 
-> Para **habilitar AHCI no Windows** 10 e 11 **não basta editar a BIOS** (alterando a interface - de IDE/RAID/SATA - para AHCI)
+> Para **habilitar AHCI no Windows** 10 e 11 **não basta editar a BIOS** (alterando a interface - de IDE/RAID/SATA - para AHCI). É necessário preparar o sistema para que ele possa reinicializar com interface AHCI sem dar erros
 
-Compreendido isso, existem formas diferentes para atender a essas 5 etapas: **editando o REGEDIT** ou usando o <strong lang="en">Safe Mode</strong> (modo seguro de boot).
+Compreendido isso, existem formas diferentes para atender a essas 5 etapas: **editando o <abbr title="Registry Editor" lang="en">REGEDIT</abbr>** ou usando o <strong lang="en">Safe Mode</strong> (modo seguro de boot).
   
-### Habilitando AHCI com Boot em Safe Mode - Modo Seguro de Inicialização
+### Habilitando AHCI com Boot em <em lang="en">Safe Mode</em> - Modo Seguro de Inicialização
 
-  O modo seguro (safe mode) que usaremos é aquele com menor quantidades de recursos possível, para garantir que não haverá incompatibilidade do SO com a inferface AHCI:
+  O modo seguro (safe mode) que usaremos é aquele com menor quantidades de recursos possível para garantir que não haverá incompatibilidade do SO com a inferface AHCI:
   
-1. Abrir o MSConfig: <kbd><kbd>cmd</kbd> + <kbd>r</kbd></kbd> ⇒ <code>msconfig</code>
+1. Entrar no MSConfig: <kbd><kbd>cmd</kbd> + <kbd>r</kbd></kbd> ⇒ <code>msconfig</code>
     - Abrir aba <kbd><samp>inicialização do Sistema</samp></kbd>
-    - Marcar a opção <kbd><samp>Inicialização segura</samp></kbd>
-2. Continua....
+    - Marcar o item <kbd><samp>Inicialização segura</samp></kbd>
+    - Marcar o subitem <kbd><samp>Mínima</samp></kbd>
+2. Reiniciar o Windows
+3. Entrar na BIOS: normalmente pressionando a tecla <kbd>del</kbd> antes da inicialização do sistema operacional
+    - Ativar o AHCI nas configurações de interface de controlador de disco rígido. O local dessa configuração e como ela está escrita, depende de modelo para modelo de firmware (BIOS/<abbr title="Unified Extensible Firmware Interface" lang="en">UEFI</abbr>)
+    - Salvar as alterações e sair
+4. Reiniciar o Windows
+5. Entrar novamente no MSConfig e refazer as configurações de boot:
+    - Desmarcar a opção <kbd><samp>Inicialização segura</samp></kbd>
+    - Marcar a opção <kbd><samp>Tornar permanente todas as configurações de inicialização</samp></kbd>
+    - Ao salvar as configurações pressionando <kbd><samp>OK</samp></kbd>, novamente o MSConfig mostrará um alerta para reiniciar o sistema. Devemos reiniciar para efetivar as alterações
+
+Pronto! Está feito a alteração. Como pedimos para o Windows reiniciar com configuração mínima, ele reiniciou sem nenhum problema e instalou os drivers para a interface do controlador AHCI automaticamente.
+
+### Habilitando **AHCI usando o REGEDIT**
+
+1. Abrir o editor de registro do Windows (REGEDIT): <kbd><kbd>cmd</kbd> + <kbd>r</kbd></kbd> ⇒ <code>regedit</code>
+    - Se o Controle de Conta de Usuário do Windows (<abbr title="User Account Control" lang="en">UAC</abbr>) solicitar permissão administrativa, informe <kbd><samp>Sim</samp></kbd> para abrir o REGEDIT
+    - Editar o valor <kbd><samp>Start</samp></kbd> na chave <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\iaStorV</code>
+
