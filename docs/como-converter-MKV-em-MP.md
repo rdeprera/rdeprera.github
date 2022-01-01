@@ -12,7 +12,7 @@ Como **converter formato de arquivo** *Matroska* em *MPEG-4* **sem perder qualid
 ## Softwares necessários
 - [x] [GPAC](http://gpac.io) é um framework para processar, inspecionar, empacotar, transmitir, reproduzir e interagir com o conteúdo de mídia. Qualquer combinação de áudio, vídeo, legendas, metadados, gráficos escalonáveis, mídia criptografada, gráficos 2D/3D e ECMAScript. O GPAC é mais conhecido por seus amplos recursos de MP4
 - [x] [MKVToolNix](https://mkvtoolnix.download/) é um conjunto de ferramentas para criar, alterar e inspecionar arquivos Matroska
-- [ ] \(opcional) MKVToolNix GUI É a interface gráfica escrita com GTK, que fornecesse uma visão de metadados mais rápida, além de recursos de edição. Como remover legendas e áudios que não serão utilizados, deixando o arquivo menor <mark>e mais fácil para converter em outros formátos</mark>
+- [ ] \(opcional) MKVToolNix GUI É a interface gráfica escrita com GTK, que fornece uma visão de metadados ampla e rápida, além de recursos de edição. Como remover legendas e áudios que não serão utilizados, deixando o arquivo menor <mark>e mais fácil para converter em outros formátos</mark>
 
 Ambos estão disponíveis para Linux, Windows, macOS - e acho que outros sistemas também. 
 
