@@ -16,7 +16,19 @@ Como **converter formato de arquivo** *Matroska* em *MPEG-4* **sem perder qualid
 
 Ambos estão disponíveis para Linux, Windows, macOS - e acho que outros sistemas também. 
 
-### Instalação do GPAC e MKVToolNix no Linux
+## Instalação do GPAC e MKVToolNix
+Ambos podem ser instalados em uma das seguintes formas:
+- [Através de gerenciadores de pacotes](#gerenciadores-de-pacotes)
+  - Pré-compilados em repositórios oficiais de distribuições Linux
+  - Binários em repositório do MKVToolNix para algumas distruibuições Linux
+  - Binários em repositórios de gerenciadores de pacotes para Windows como o Chocolatey ou o HomeBrew para macOS
+- Utilizando-se de binários (executáveis) disponível no site de cada software ou no repositório de cada um
+- Compilando o código fonte
+
+
+### Linux
+
+#### Gerenciadores de Pacotes
 
 Base Debian:
 ``` shell
@@ -41,6 +53,8 @@ MKVToolNix
 : [GitHub](https://github.com/nmaier/mkvtoolnix) <kbd>https://github.com/nmaier/mkvtoolnix</kbd>
 : [Site](https://mkvtoolnix.download) <kbd>https://mkvtoolnix.download</kbd>
 
+
+## Convertendo Nosso MKV em MP4
 
 ## Extrair o Áudio e o Vídeo do Arquivo MKV
 
@@ -89,7 +103,7 @@ Progresso: 100%
 </samp>
 </pre>
 
-    ## Compilar o Áudio e o Vídeo em um **Arquivo MP4**
+## Compilar o Áudio e o Vídeo em um **Arquivo MP4**
 Usaremos o programa MP4Box, que vem junto com o GPAC que foi previamente instalado, para unir nosso arquivo de áudio (audio.ac3) e o de vídeo (video.h264), em um arquivo único no formato MP4:
 ```shell
 MP4Box -add video.h264 -add audio.ac3 video.mp4
@@ -111,4 +125,4 @@ Saving video.mp4: 0.500 secs Interleaving
 > Note que as saídas das instruções do MP4Box estão em inglês, enquanto que as instruções dos programas do MKVToolNix estão em português. 
 Isso pode variar de acordo com a disponibilidade de tradução para a versão do sofware e de acordo com a configuração de idioma do sistema operacional.
 
-Pronto! Está concluída a conversão e temos um lindo arquivo com extensão .mp4 que pode ser usada para casting em uma Android TV ou qualquer outra coisa não suportada pelo formato Matroska 🔚
+Pronto! Está concluída a conversão e temos um lindo arquivo com extensão .mp4 que pode ser usada para fazer o **<i lang="en">casting</i> em uma Android TV** ou qualquer outra coisa que não é possível usando o formato Matroska 🔚
