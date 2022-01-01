@@ -16,7 +16,7 @@ Como **converter formato de arquivo** *Matroska* em *MPEG-4* **sem perder qualid
 
 Ambos estão disponíveis para Linux, Windows, macOS - e acho que outros sistemas também. 
 
-## Instalação do GPAC e MKVToolNix
+### Instalação do GPAC e MKVToolNix
 Ambos podem ser instalados em uma das seguintes formas:
 - [Através de gerenciadores de pacotes](#gerenciadores-de-pacotes)
   - Pré-compilados em repositórios oficiais de distribuições Linux
@@ -26,7 +26,7 @@ Ambos podem ser instalados em uma das seguintes formas:
 - Compilando o código fonte
 
 
-### Linux
+#### Linux
 
 #### Gerenciadores de Pacotes
 
@@ -43,7 +43,7 @@ sudo pacman -S gpac mkvtoolnix-cli
 # GUI MKVToolNix (opcional)
 ; sudo pacman -S mkvtoolnix-gtk
 ```
-### Windows e macOS
+#### Windows e macOS
 Consulte a documentação nos respectivos sites:
 
 GPAC
@@ -56,7 +56,7 @@ MKVToolNix
 
 ## Convertendo Nosso MKV em MP4
 
-## Extrair o Áudio e o Vídeo do Arquivo MKV
+### Extrair o Áudio e o Vídeo do Arquivo MKV
 
 Primeiro precisamos checar as trilhas existentes no <samp>.mkv</samp> (mastroska).
 ``` shell {#exemplo1}
@@ -103,7 +103,7 @@ Progresso: 100%
 </samp>
 </pre>
 
-## Compilar o Áudio e o Vídeo em um **Arquivo MP4**
+### Compilar o Áudio e o Vídeo em um **Arquivo MP4**
 Usaremos o programa MP4Box, que vem junto com o GPAC que foi previamente instalado, para unir nosso arquivo de áudio (audio.ac3) e o de vídeo (video.h264), em um arquivo único no formato MP4:
 ```shell
 MP4Box -add video.h264 -add audio.ac3 video.mp4
