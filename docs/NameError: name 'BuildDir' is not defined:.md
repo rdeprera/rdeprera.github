@@ -1,0 +1,1 @@
+Quando o erro <samp>NameError: name 'BuildDir' is not defined:</samp> acontece após utilizar o scons para compilar é porque a variável BuildDir está depreciada e deve ser substituída por VariantDir no arquivo SConstruct
