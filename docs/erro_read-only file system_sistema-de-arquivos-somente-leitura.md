@@ -2,7 +2,7 @@
 
 ## :fast_forward: TL;DR
 
-Remontar, com permissão de escrita, o diretório ou a imagem de mídia com o comando mount
+Remontar, com permissão de escrita, o diretório ou a imagem de mídia com o comando `mount`
 
 ---
 
