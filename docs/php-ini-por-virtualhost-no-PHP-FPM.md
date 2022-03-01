@@ -16,10 +16,6 @@ sudo cp /etc/php/8.1/fpm/php.ini /etc/php/8.1/fpm/php.novo-virtualhost.ini
   ```
 2. E configurar, nesse novo arquivo `php-fpm.novo-virtualhost.conf`, um novo diretório de pool (+-) na linha 145
   ```INI
-  ; Relative path can also be used. They will be prefixed by:
-  ;  - the global prefix if it's been set (-p argument)
-  ;  - /usr otherwise
-  ; 
   ; Criando um diretório personalizado para virtuahosts que usarão o novo php.ini (php.novo-virtualhost.ini)
   ; include=/etc/php/8.1/fpm/pool.d/*.conf
   include=/etc/php/8.1/fpm/pool.novo-virtualhost.d/*.conf
