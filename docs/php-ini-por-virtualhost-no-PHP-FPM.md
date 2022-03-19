@@ -4,7 +4,7 @@ Neste exemplo estou usando o [PHP-FPM](https://www.php.net/manual/pt_BR/install.
 ## GNU/Linux
 
 ### Novo `php.ini` para um Novo VirtualHost
-Fazer uma cópia do `php.ini` e fazer todos os ajustes no novo, como por exemplo, ativar extensões.
+Fazer uma cópia do `php.ini` e fazer todos os ajustes no novo (na cópia), como por exemplo, ativar extensões.
 ```sh
 sudo cp /etc/php/8.1/fpm/php.ini /etc/php/8.1/fpm/php.novo-virtualhost.ini
 ```
@@ -42,4 +42,4 @@ Para reiniciar na linha de comando, é necessário estar no diretório de binár
 
 ## macOS
 
-Usar o `apachectl` e `launchctl` em substituição ao `systemctl`, o resto, provavelmente é igual.
+Usar o `apachectl` e `launchctl` em substituição ao `systemctl`, o resto, provavelmente é igual ao [GNU](https://www.gnu.org)/[Linux](https://www.debian.org).
