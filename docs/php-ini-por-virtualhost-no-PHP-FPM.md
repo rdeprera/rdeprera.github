@@ -42,4 +42,4 @@ Para reiniciar na linha de comando, é necessário estar no diretório de binár
 
 ## macOS
 
-Usar o `apachectl` e `launchctl` em substituição ao `systemctl`, o resto, provavelmente é igual ao [GNU](https://www.gnu.org)/[Linux](https://www.debian.org).
+Usar o `apachectl` e `launchctl` em substituição ao `systemctl`. O restante provavelmente é igual ao [GNU](https://www.gnu.org)/[Linux](https://www.debian.org).
